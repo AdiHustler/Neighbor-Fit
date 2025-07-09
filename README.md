@@ -8,10 +8,9 @@ A full-stack web application that connects neighbors for fitness activities, sol
 
 ## 🚀 Live Demo
 
-**Deployed Application**: [https://neighborfit-main.vercel.app](https://neighborfit-main.vercel.app)
+**Deployed Application**: [https://v0-neighbor-fitmain.vercel.app/](https://v0-neighbor-fitmain.vercel.app/)
 
 **Key Features to Explore**:
-- Interactive map with real Delhi locations
 - Dynamic activity filtering and search
 - Payment integration with Stripe
 - Real-time participant tracking
@@ -66,47 +65,6 @@ A full-stack web application that connects neighbors for fitness activities, sol
 │ • Mapbox Maps   │    │ • Error Handling │    │ • Resend        │
 │ • State Mgmt    │    │ • Data Transform │    │ • Clerk         │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
-\`\`\`
-
-## 🔧 Installation & Setup
-
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-- Git
-
-### Environment Variables
-Create a `.env.local` file:
-\`\`\`bash
-# Mapbox (Required for maps)
-NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=your_mapbox_token
-
-# Stripe (Required for payments)
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_public_key
-STRIPE_SECRET_KEY=your_stripe_secret_key
-
-# Resend (Required for emails)
-RESEND_API_KEY=your_resend_key
-
-# Clerk (Required for auth)
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-\`\`\`
-
-### Local Development
-\`\`\`bash
-# Clone repository
-git clone https://github.com/yourusername/neighborfit-main.git
-cd neighborfit-main
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Open browser
-open http://localhost:3000
 \`\`\`
 
 ## 📊 Algorithm Design
@@ -168,61 +126,3 @@ const testDistanceAccuracy = () => {
   return accuracy < 0.05 // 5% tolerance - PASSED
 }
 \`\`\`
-
-### User Experience Validation
-- ✅ Map loads within 2 seconds
-- ✅ All interactions respond within 200ms
-- ✅ Mobile responsive on 320px-1920px screens
-- ✅ Graceful error handling for location access
-
-## 📚 Documentation
-
-### Technical Documentation
-- [`/docs/problem-solving-documentation.md`](./docs/problem-solving-documentation.md) - Detailed problem analysis and solution approach
-- [`/docs/technical-architecture.md`](./docs/technical-architecture.md) - System architecture and implementation details
-
-### API Documentation
-- **Property Data API**: Handles activity data with caching
-- **Location Services**: Mapbox integration for mapping
-- **Payment Processing**: Stripe integration for transactions
-- **Email Services**: Resend integration for notifications
-
-## 🚧 Known Limitations
-
-### Current Constraints
-1. **Mock Data**: Uses realistic but simulated activity data
-2. **Limited Geographic Scope**: Currently focused on Delhi region
-3. **Simplified Matching**: Basic algorithm without machine learning
-
-### Future Enhancements
-1. **Real User Data**: Integration with actual fitness providers
-2. **ML-Based Matching**: Advanced preference learning
-3. **Social Features**: Friend connections and activity sharing
-4. **Mobile App**: Native iOS/Android applications
-
-## 🎯 Project Outcomes
-
-### Problem-Solving Approach
-- ✅ **Systematic Research**: Data-driven problem identification
-- ✅ **Technical Implementation**: Functional algorithm with real integrations
-- ✅ **Scalable Design**: Architecture supporting future growth
-
-### Learning Outcomes
-- **API Integration**: Successfully integrated 4 different external APIs
-- **Algorithm Design**: Implemented location-based matching with multiple factors
-- **Full-Stack Development**: Complete application from frontend to deployment
-- **Problem Decomposition**: Broke down complex neighborhood matching into solvable components
-
-## 📞 Contact & Support
-
-**Developer**: [Your Name]
-**Email**: [your.email@example.com]
-**GitHub**: [https://github.com/yourusername](https://github.com/yourusername)
-
-## 📄 License
-
-This project is part of an academic assignment and is available for educational purposes.
-
----
-
-**Built with ❤️ for neighborhood fitness communities**
